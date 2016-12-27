@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rllogin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/userlogin"
+        android:id="@+id/tvuserlogin"
+        android:layout_marginTop="65dp"
+        android:textColor="#00f"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/tvpassword"
+        android:layout_alignStart="@+id/tvpassword" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pass_user"
+        android:id="@+id/tvpassword"
+        android:layout_marginTop="44dp"
+        android:textColor="#00f"
+        android:textSize="20sp"
+        android:layout_below="@+id/tvuserlogin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/user_name"
+        android:ems="10"
+        android:id="@+id/tfusername"
+        android:layout_alignTop="@+id/tvuserlogin"
+        android:layout_toRightOf="@+id/tvpassword"
+        android:textSize="20sp"
+        android:layout_alignRight="@+id/editText8"
+        android:layout_alignEnd="@+id/editText8" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_login"
+        android:id="@+id/btlogin"
+        android:layout_below="@+id/editText8"
+        android:layout_alignLeft="@+id/tvpassword"
+        android:layout_alignStart="@+id/tvpassword" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText8"
+        android:layout_alignTop="@+id/tvpassword"
+        android:layout_toRightOf="@+id/tvpassword"
+        android:layout_toEndOf="@+id/tvpassword" />
+
+</RelativeLayout>
